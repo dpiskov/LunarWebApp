@@ -2,30 +2,36 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text">
+@* <div class="text">
     <h1 class="display-4">welcome</h1>
     <p>learn about <a href="https://learn.microsoft.com/aspnet/core">building web apps with asp.net core</a>.</p>
-</div>
+</div> *@
 
 <div class="wrapper">
-    <div class="card">
-        <img src="images/glowing-sky-sphere-orbits-starry-galaxy-generated-by-ai (1).jpg" alt="Glowing Sky Image">
-        <div class="info">
-            <h1>Notes</h1>
+    <a asp-area="" asp-controller="Notes" asp-action="Index">
+        <div class="card">
+            <img src="images/glowing-sky-sphere-orbits-starry-galaxy-generated-by-ai (1).jpg" alt="Glowing Sky Image">
+            <div class="info">
+                <h1>Notes</h1>
+            </div>
         </div>
-    </div>
+    </a>
 
-    <div class="card">
-        <img src="images/l5pJ8l4hYByv1gAcmfAY.jpg" alt="Space Image">
-        <div class="info">
-            <h1>Fitness</h1>
+    <a asp-area="" asp-controller="Fitness" asp-action="Index">
+        <div class="card">
+            <img src="images/l5pJ8l4hYByv1gAcmfAY.jpg" alt="Space Image">
+            <div class="info">
+                <h1>Fitness</h1>
+            </div>
         </div>
-    </div>
+    </a>
 
-    <div class="card">
-        <img src="images/responsive_big_webp_M6WwUWq0RPC7_MW5n6s81wgynwMAkV1RKeJfawkhDDo.jpg" alt="Stars Image">
-        <div class="info">
-            <h1>Habits</h1>
+    <a asp-area="" asp-controller="Habits" asp-action="Index">
+        <div class="card">
+            <img src="images/responsive_big_webp_M6WwUWq0RPC7_MW5n6s81wgynwMAkV1RKeJfawkhDDo.jpg" alt="Stars Image">
+            <div class="info">
+                <h1>Habits</h1>
+            </div>
         </div>
-    </div>
+    </a>
 </div>

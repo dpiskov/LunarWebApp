@@ -1,0 +1,151 @@
+* {
+    /* box-sizing: border-box; */
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*background: #222;*/
+}
+
+body {
+    margin: 0;
+    background-image: url(../images/Lunar_agenda_pillars.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.text {
+    text-align: left;
+    /*text-align: center;*/
+    margin: 20px 0;
+}
+
+.wrapper {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.card {
+    width: 400px;
+    height: 229px;
+    padding: 2rem 1rem;
+    margin-right: 1.5rem;
+    /* background: #fff; */
+    position: relative;
+    /*display: flex;*/
+    /*align-items: flex-end;*/
+    /*box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);*/
+    border: 2px solid rgba(0, 255, 255, 0.4); /* Slightly less transparent neon border */
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.5), /* Softer outer glow */
+    0 0 15px rgba(0, 255, 255, 0.3), /* Smaller spread for outer neon effect */
+    inset 0 0 5px rgba(0, 255, 255, 0.7); /* Less intense inner glow */
+    transition: 0.5s ease-in-out;
+    background: transparent;
+}
+
+
+
+    .card:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 12px rgba(0, 255, 255, 0.6), /* Softer glow on hover */
+        0 0 25px rgba(0, 255, 255, 0.4), inset 0 0 8px rgba(0, 255, 255, 0.8); /* Softer inner glow on hover */
+        /* transform: translateY(20px); */
+    }
+
+
+
+    .card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 176, 155, 0.285), rgba(255, 255, 255, 0.13));
+        z-index: 2;
+        transition: 0.5s all;
+        opacity: 0;
+    }
+
+
+
+    .card:hover:before {
+        opacity: 1;
+        filter: blur(10px);
+    }
+
+
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+
+    .card .info {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* position: absolute; */
+        z-index: 3;
+        color: #fff;
+        opacity: 1;
+        /* transform: translateY(30px); */
+        transition: 0.5s all;
+        background: transparent;
+    }
+
+        .card .info h1 {
+            background: transparent;
+        }
+/*html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+*/

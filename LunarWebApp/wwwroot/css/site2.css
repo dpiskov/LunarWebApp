@@ -1,0 +1,63 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    padding: 0 20px;
+}
+
+ Card Styles 
+.card {
+    flex: 1;
+    max-width: 400px;
+    position: relative;
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    background: transparent;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card .info {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+ Responsive Design 
+@media (max-width: 768px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+}
+
+ Sticky Footer 
+footer {
+    margin-top: auto;
+background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
