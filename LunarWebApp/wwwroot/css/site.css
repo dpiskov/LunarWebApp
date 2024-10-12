@@ -94,17 +94,19 @@ main {
     }
 }
 
+thead, tbody {
+    text-align: center;
+    vertical-align: central;
+}
+
 /* Sticky Footer */
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: static;
     bottom: 0;
-
     width: 100%;
     height: 10%;
-
     /*white-space: nowrap;*/
 }
